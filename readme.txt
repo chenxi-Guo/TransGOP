@@ -1,24 +1,2 @@
-Gaze object prediction (GOP) aims to predict the location of the
-object that is watched by a human. Previous gaze object prediction works use CNN-based object detectors to predict the object
-location. However, we find that Transformer-based object detectors
-can predict more accurate object location for the objects that are
-close to human or goods shelves due to the ability of self-attention
-mechanism in building long dependencies. To this end, this paper
-introduces Transformer into the fields of gaze object prediction and
-proposes an end-to-end Transformer-based gaze object prediction
-method named TransGOP. Specifically, TransGOP uses of-the-shelf
-Transformer-based object detector to detect the location of objects,
-and fed the fused feature of the head image and scene image into
-a Transformer-based gaze prediction branch to regress the gaze
-heatmap. Moreover, to better enhance the gaze regressor by the
-informative knowledge from the object detectors, we propose an
-object-to-gaze attention mechanism to let the queries in the gaze
-regressor receive the encoded features of the object detector. Finally, to make the whole framework can be end-to-end trained, we
-propose a Gaze Box loss to jointly optimize the object detector and
-gaze regressor by enhancing the gaze energy in the box of the stared
-object. Extensive experiments on the GOO-Synth and GOO-Real
-datasets demonstrate that our TransGOP achieves state-of-the-art
-performance on all tracks, i.e., object detection, gaze estimation,
-and gaze object prediction. On the GOO-Synth dataset, TransGOP
-can outperform the state-of-the-art CNN-based method by 24.9%
-in terms of mSoC.
+# TransGOP #
+Gaze object prediction (GOP) aims to predict the location of the object that is watched by a human. Previous gaze object prediction works use CNN-based object detectors to predict the object location. However, we find that Transformer-based object detectors can predict more accurate object location for the objects that are close to human or goods shelves due to the ability of self-attention mechanism in building long dependencies. To this end, this paper introduces Transformer into the fields of gaze object prediction and proposes an end-to-end Transformer-based gaze object prediction method named TransGOP. Specifically, TransGOP uses of-the-shelf Transformer-based object detector to detect the location of objects, and fed the fused feature of the head image and scene image into a Transformer-based gaze prediction branch to regress the gaze heatmap. Moreover, to better enhance the gaze regressor by the informative knowledge from the object detectors, we propose an object-to-gaze attention mechanism to let the queries in the gaze regressor receive the encoded features of the object detector. Finally, to make the whole framework can be end-to-end trained, we propose a Gaze Box loss to jointly optimize the object detector and gaze regressor by enhancing the gaze energy in the box of the stared object. Extensive experiments on the GOO-Synth and GOO-Real datasets demonstrate that our TransGOP achieves state-of-the-art performance on all tracks, i.e. , object detection, gaze estimation, and gaze object prediction. On the GOO-Synth dataset, TransGOP can outperform the state-of-the-art CNN-based method by 24.9% in terms of mSoC.
