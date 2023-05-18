@@ -423,7 +423,7 @@ def evaluate(model, criterion, postprocessors, data_loader, base_ds, device, out
     all_gtmap = np.stack(all_gtmap).reshape([-1])
     auc = roc_auc_score(all_gtmap, all_predmap)
     rows = [auc, l2, ang]
-
+    print('AUC:', auc, ', Dist. :', l2, ', Ang. :', ang)
     with open('logs/score.csv', 'a', encoding='utf8', newline='') as f:
         writer = csv.writer(f)
         writer.writerow(rows)

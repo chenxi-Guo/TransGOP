@@ -35,8 +35,8 @@ def get_args_parser():
 
     # dataset parameters
     parser.add_argument('--dataset_file', default='coco')
-    # /data1/gcx002/Datasets/gooreal/debug/       /data1/gcx002/Datasets/goosynth10000/gaze_dino/
-    parser.add_argument('--coco_path', type=str, default='/data1/gcx002/Datasets/goosynth/synth_to_gaze-dino/Quality/')
+
+    parser.add_argument('--coco_path', type=str, default='./Datasets/goosynth/')
 
     parser.add_argument('--coco_panoptic_path', type=str)
     parser.add_argument('--remove_difficult', action='store_true')
@@ -52,7 +52,6 @@ def get_args_parser():
     parser.add_argument('--seed', default=42, type=int)
     parser.add_argument('--resume', default='', help='resume from checkpoint')
 
-    # /data1/gcx002/Gatector-DINO/No-shared_backbone/logsAUC0.966_Dist0.079/checkpoint0018.pth
     parser.add_argument('--pretrain_model_path', help='load from other checkpoint')
     parser.add_argument('--finetune_ignore', type=str, nargs='+')
     parser.add_argument('--start_epoch', default=0, type=int, metavar='N',
