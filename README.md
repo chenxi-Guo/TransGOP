@@ -46,33 +46,11 @@ Annotation file:
 
 [GOOsynth-test_data_Annotation](https://mailnwpueducn-my.sharepoint.com/:u:/g/personal/yangle_nwpu_mail_nwpu_edu_cn/EW3HgRNFGPVHmaoYeFwhY1gB8UxwdEWSr55UwDaxwYvp1w)
 
-You can download GOO-Real from Baidu Netdisk:
+You can download GOO-Real dataset and annotations from Baidu Netdisk:
 
-Train:
-[GOOreal-train_data](https://pan.baidu.com/s/1kSiOW2mvJ7m7Rh-MW3H8KA?pwd=6j5l)(code:6j5l)
+[GOOreal-data and annotations](https://pan.baidu.com/s/1Flfs15vBaCeuST5a5zkQiA)(code:pfni)
 
-Test:
-[GOOreal-test_data](https://pan.baidu.com/s/1rzBja86SjmYKJjSOFbKKHA?pwd=aa4i)(code:aa4i)
 
-Annotation file:
-
-[GOOreal-train_data_Annotation](https://pan.baidu.com/s/1RGV5RX8Hq4rAUp4f8asM8A?pwd=xdvm)(code:xdvm)
-
-[GOOreal-test_data_Annotation](https://pan.baidu.com/s/1atpkeLhNK6X6yXUUa9Otag?pwd=a76s)(code:a76s)
-
-You can also download GOO-Real from OneDrive:
-
-Train:
-[GOOreal-train_data](https://mailnwpueducn-my.sharepoint.com/:u:/g/personal/yangle_nwpu_mail_nwpu_edu_cn/ETjRM4To-QxNtp9a4hMTTVwBAfBJ8e6Hs7TNv5RzsJgj2w)
-
-Test:
-[GOOreal-test_data](https://mailnwpueducn-my.sharepoint.com/:u:/g/personal/yangle_nwpu_mail_nwpu_edu_cn/EXlBBBnd2khPk7S0_FKKGtQBCoIKoHSu7SmpdpxTAICpdw)
-
-Annotation file:
-
-[GOOreal-train_data_Annotation](https://mailnwpueducn-my.sharepoint.com/:u:/g/personal/yangle_nwpu_mail_nwpu_edu_cn/EZEpAPUtWSlGoS7DOwuV1G8BvhYuWZL_NLwqkDJe3sZ7JQ)
-
-[GOOreal-test_data_Annotation](https://mailnwpueducn-my.sharepoint.com/:u:/g/personal/yangle_nwpu_mail_nwpu_edu_cn/EfCtqSoZxnxEgPKwB_IfmfcBvap1R8d3o8wjxUY6tPr0fw)
 
 ~~~~
 Please ensure the data structure is as below
@@ -104,14 +82,14 @@ Please ensure the data structure is as below
           ├── ...
 ~~~~
 
-##Environment Preparation
-Requirements
+Environment Preparation
+
 
 ```
 conda env create -n TransGOP -f environment.yaml
 ```
 
-##Compiling CUDA operators
+Compiling CUDA operators
    ```sh
    cd models/dino/ops
    python setup.py build install
