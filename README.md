@@ -6,45 +6,11 @@ In this work, we introduces Transformer into the fields of gaze object predictio
 ## Data Preparation
 The GOO dataset contains two subsets: GOO-Sync and GOO-Real. 
 
-You can download GOO-synth from the following links:
+You can download GOO-Synth dataset and annotations from Baidu Netdisk:
 
-Train:
-[part0](https://zenodo.org/record/5501686/files/goosynth_train.zip?download=1), [part1](https://zenodo.org/record/5501754/files/goosynth_train.z01?download=1), [part2](https://zenodo.org/record/5501788/files/goosynth_train.z02?download=1), [part3](https://zenodo.org/record/5501941/files/goosynth_train.z03?download=1), [part4](https://zenodo.org/record/5502388/files/goosynth_train.z04?download=1), [part5](https://zenodo.org/record/5504008/files/goosynth_train.z05?download=1), [part6](https://zenodo.org/record/5507589/files/goosynth_train.z06?download=1), [part7](https://zenodo.org/record/5511063/files/goosynth_train.z07?download=1), [part8](https://zenodo.org/record/5511688/files/goosynth_train.z08?download=1), [part9](https://zenodo.org/record/5512157/files/goosynth_train.z09?download=1)
-
-Test:
-[GOOSynth-Test](https://pan.baidu.com/s/1fhHgXIN5W6VSll7DTO0F4w) (code:hxv9)
-
-Annotation file:
-
-[goosynth_train_v2_no_segm](https://pan.baidu.com/s/1A38TTOQ-ESc8OtqFETLVQQ) (code:9rn2)
-
-[goosynth_test_v2_no_segm](https://pan.baidu.com/s/1AYtPkw9mCLfHb8vp1Dd2mg) (code:tuvn)
-
-You can also download GOO-synth from OneDrive:
-
-Train:
-[part1](https://mailnwpueducn-my.sharepoint.com/:u:/g/personal/yangle_nwpu_mail_nwpu_edu_cn/ESk3KTXgDSFMmVcBW_EMAssBvxBf-eBSMK39g8yqFlRVgA?e=dSIXsd),
-[part2](https://mailnwpueducn-my.sharepoint.com/:u:/g/personal/yangle_nwpu_mail_nwpu_edu_cn/EVoQzdFRQ85Bok0tmVpPLLcBk-adZBEcuRa-xp20sxVICw?e=hq5bwi),
-[part3](https://mailnwpueducn-my.sharepoint.com/:u:/g/personal/yangle_nwpu_mail_nwpu_edu_cn/EUHIrsNLq_pHm2s7E8V9O5IBWBmvf5qI9jFue7wYOVNhyw?e=GYbTaW),
-[part4](https://mailnwpueducn-my.sharepoint.com/:u:/g/personal/yangle_nwpu_mail_nwpu_edu_cn/EVTOQM6kkFJJm5v_h7K8r88BF2RlXa76DfE88v3rJkw70Q?e=NPuBzO),
-[part5](https://mailnwpueducn-my.sharepoint.com/:u:/g/personal/yangle_nwpu_mail_nwpu_edu_cn/ESLLYmaimxlIgCW4Hy_Q9LMBrMS6ouPsAwWDYf7kUStElA?e=bKvZYd),
-[part6](https://mailnwpueducn-my.sharepoint.com/:u:/g/personal/yangle_nwpu_mail_nwpu_edu_cn/ETevP-Nko6BAjBTidy-YsIYB8_145u7SeISKYtIr4AqKVg?e=0o9GOq),
-[part7](https://mailnwpueducn-my.sharepoint.com/:u:/g/personal/yangle_nwpu_mail_nwpu_edu_cn/EUhglUujYbFIqYEOSgp5R5kBVZqvz0a4GdGogqlXXm1JAA?e=30ysd6),
-[part8](https://mailnwpueducn-my.sharepoint.com/:u:/g/personal/yangle_nwpu_mail_nwpu_edu_cn/EY5AI0TLdrtMkN_pqV3FOzABtSPlnDOcjNT7QMEtDC5iXg?e=zI13Cp),
-[part9](https://mailnwpueducn-my.sharepoint.com/:u:/g/personal/yangle_nwpu_mail_nwpu_edu_cn/EXHwQT0GRStFqSML6s8uW6kBLuFF8VjTf_opBg_ivtbUBQ?e=e0Agrv),
-[part10](https://mailnwpueducn-my.sharepoint.com/:u:/g/personal/yangle_nwpu_mail_nwpu_edu_cn/EZ1LC_GF9a9EtUnofjLUtW4Bhb_-dg2bSgx6UYGS1piLrA?e=yawdDf),
-[part11](https://mailnwpueducn-my.sharepoint.com/:u:/g/personal/yangle_nwpu_mail_nwpu_edu_cn/ERLtx5hBM5tLtUPAjs2yvYgBQ8CrEW4S8zd9HKzow7jX2w?e=BTCvl6)
+[GOOsynth-data and annotations](https://pan.baidu.com/s/1pe5kj9z3mFPl0guatPVrvA)(code:166j)
 
 
-
-Test:
-[GOOsynth-test_data](https://mailnwpueducn-my.sharepoint.com/:u:/g/personal/yangle_nwpu_mail_nwpu_edu_cn/EQ5DC43-aYVOt3-Jmy5ZIscBFd0yGvVeyiWOoHLFwZsJ4Q)
-
-Annotation file:
-
-[GOOsynth-train_data_Annotation](https://mailnwpueducn-my.sharepoint.com/:u:/g/personal/yangle_nwpu_mail_nwpu_edu_cn/ET6h-STtBiVIn7jpwOP8bzEB__u-FEmwT8wXLKtTUw865g)
-
-[GOOsynth-test_data_Annotation](https://mailnwpueducn-my.sharepoint.com/:u:/g/personal/yangle_nwpu_mail_nwpu_edu_cn/EW3HgRNFGPVHmaoYeFwhY1gB8UxwdEWSr55UwDaxwYvp1w)
 
 You can download GOO-Real dataset and annotations from Baidu Netdisk:
 
