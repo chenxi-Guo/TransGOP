@@ -76,6 +76,7 @@ bash scripts/TransGOP_train.sh /Dateses/gooreal/
 
 ## Pre-trained Models
 You can download pretrained models from baiduyun:
+[Pre-trained Models on GOO-Synth dataset](https://pan.baidu.com/s/1pMRI69Ztj2gAezvWOcfCPQ) (code:pk58).
 
 [Pre-trained Models on GOO-Real dataset](https://pan.baidu.com/s/1atXlAI93C1e8yzx0bqwcnA) (code:e570). 
 
