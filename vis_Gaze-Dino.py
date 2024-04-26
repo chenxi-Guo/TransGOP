@@ -194,12 +194,12 @@ def generate_att_map(image_, heatmap, image_name, gaze_box, img_save_dir):
     return x
 
 if __name__ == '__main__':
-    model_config_path = "config/DINO/DINO_4scale.py" # change the path of the model config file
-    model_checkpoint_path = "logs_256_pretrain_real/best_gaze.pth" # change the path of the model checkpoint
+    model_config_path = "config/TransGOP/TransGOP_4scale.py" # change the path of the model config file
+    model_checkpoint_path = "logs/.pth" # change the path of the model checkpoint
     # See our Model Zoo section in README.md for more details about our pretrained models.
-    img_dir = "/data1/gcx002/Datasets/gooreal/gaze-dino/val2017"
+    img_dir = ".Datasets/gooreal/val"
     img_save_dir = "vis_GOP_real/"
-    ann = "/data1/gcx002/Datasets/gooreal/gaze-dino/annotations/instances_val2017.json"
+    ann = "./Datasets/gooreal/annotations/gop_val.json"
 
     args = SLConfig.fromfile(model_config_path)
     args.device = 'cuda'

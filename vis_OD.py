@@ -194,11 +194,11 @@ def generate_att_map(image_, heatmap, image_name, gaze_box, img_save_dir):
     return x
 
 if __name__ == '__main__':
-    model_config_path = "config/DINO/DINO_4scale.py"
+    model_config_path = "config/TransGOP/TransGOP_4scale.py"
     model_checkpoint_path = "best_gaze.pth"
-    img_dir = "/data1/gcx002/Datasets/goosynth10000/gaze_dino/val2017/"
+    img_dir = "./Datasets/goosynth/val/"
     img_save_dir = "vis_OD_synth/0.5/"
-    ann = "/data1/gcx002/Datasets/goosynth10000/gaze_dino/annotations/instances_val2017.json"
+    ann = "./Datasets/goosynth/annotations/gop_val.json"
 
     # model_checkpoint_path = "logs_256_pretrain_real/best_gaze.pth"  # change the path of the model checkpoint
     # See our Model Zoo section in README.md for more details about our pretrained models.
